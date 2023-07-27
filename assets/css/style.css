@@ -40,6 +40,7 @@
     .content{
         height: 100%;
         width: calc(100vw - 200px);
+        margin-left: auto;
     }
     .container_special{
         width: calc(100vw - 200px);
