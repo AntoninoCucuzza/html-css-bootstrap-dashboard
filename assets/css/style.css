@@ -1,27 +1,44 @@
 .debug #site_header{
-    height: 100px;
+   
     background-color: gray;
 }
     
 .debug .sidebar{
     background-color: black;
     height: calc(100vh - 100px);
-    width: 200px;
+    width: 50px;
 }
 
 .debug .banner{
     background-color: blue;
     height: 150px;
-    width: calc(100vw - 200px);
+    width: calc(100vw - 50px);
 }
 .debug .content{
     background-color: wheat;
     height: 100%;
-    width: calc(100vw - 200px);
+    width: calc(100vw - 50px);
 }
 
 
 .debug [class^='col']{
     background-color: aquamarine; 
     height: 100px;
+}
+
+@media screen and (min-width:992px) {
+    .debug .sidebar{
+        height: calc(100vh - 100px);
+        width: 200px;
+    }
+    .debug .banner{
+        background-color: blue;
+        height: 150px;
+        width: calc(100vw - 200px);
+    }
+    .debug .content{
+        background-color: wheat;
+        height: 100%;
+        width: calc(100vw - 200px);
+    }
 }
