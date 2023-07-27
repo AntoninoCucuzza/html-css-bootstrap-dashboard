@@ -1,5 +1,37 @@
+:root{
+    --boo-bg-main: #f8f9fa ;
+}
+
+.sidebar{
+    background-color: black;
+    height: calc(100vh - 100px);
+    width: 50px;
+
+}
+.content{
+    background-color: var(--boo-bg-main);
+}
+
+.banner{
+    width: calc(100vw - 50px);
+
+}
 
 
+@media screen and (min-width:992px) {
+    .sidebar{
+        height: calc(100vh - 82px);
+        width: 200px;
+    }
+    .banner{
+       
+        width: calc(100vw - 200px);
+    }
+    .content{
+        height: 100%;
+        width: calc(100vw - 200px);
+    }
+}
 
 /* #region debug */
 
