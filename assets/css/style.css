@@ -1,5 +1,7 @@
 :root{
     --boo-bg-main: #f8f9fa ;
+    --boo-bg-sidebar: #051e34 ;
+    --boo-bg-badge-primary: #165bba ;
 }
 
 .container_special{
@@ -11,7 +13,9 @@
 }
 
 .sidebar{
-    background-color: black;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: var(--boo-bg-sidebar);
+    background-size: cover;
     height: calc(100vh - 80px);
     width: 50px;
     position: fixed;
@@ -24,7 +28,10 @@
 
 .banner{
     width: calc(100vw - 50px);
+}
 
+.bg_badge{
+    background-color: var(--boo-bg-badge-primary);
 }
 
 
@@ -44,6 +51,9 @@
     }
     .container_special{
         width: calc(100vw - 200px);
+    }
+    main{
+        height: calc(100vh - 80px);
     }
 }
 
