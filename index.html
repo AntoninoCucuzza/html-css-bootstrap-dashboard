@@ -17,28 +17,28 @@
     </head>
     <body class="debug">
 
-        <header id="site_header">
+        <header id="site_header" class="bg-white">
             <div class="container-fluid">
                 <div class="input-group py-3 ">
 
                     <img class="d-xl-none"src="./assets/img/mobile-logo.png" alt="" height="50px">
                     <img class="d-none d-xl-block" src="./assets/img/logo.svg" alt="" height="50px">
 
-                    <span class="input-group-text border-start-0 ms-5 rounded-start" id="basic-addon1">
+                    <span class="input-group-text border-start-0 ms-5 rounded-start bg-secondary-subtle" id="basic-addon1">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
 
                     <input type="text" class="form-control border-start-0  rounded-end bg-secondary-subtle me-3" placeholder="Prova a cercare: Lezione di Laravel" aria-label="Username" aria-describedby="basic-addon1">
 
-                    <span class="align-self-center me-3">
+                    <span class="align-self-center me-3 d-none d-lg-block">
                         <i class="fa-solid fa-list"></i>
                     </span>
                     
-                    <span class="align-self-center me-3">
+                    <span class="align-self-center me-3 d-none d-lg-block">
                         <i class="fa-solid fa-circle-question"></i>
                     </span>
 
-                    <span class="align-self-center me-3">
+                    <span class="align-self-center me-3 d-none d-lg-block">
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </span>
 
@@ -54,20 +54,40 @@
 
         <main id="site_main">
             <div class="wrapper d-flex">
-                <div class="sidebar p-4">
+                <div class="sidebar  ">
 
-                    <div class="d-flex flex-column align-items-center text-white h-100">
-                        <div class="pb-3">home</div>
-                        <div class="pb-3">stats</div>
-                        <div class="pb-3">signals</div>
-                        <div class="mt-auto">admin</div>
+                    <div class="d-flex flex-column text-white align-items-center align-items-lg-start px-lg-3 pb-3   h-100">
+                        <div class="pb-3 fs-5 mt-5">
+                            <i class="fa-solid fa-house me-lg-3 " style="color: #ffffff;"></i>
+                            <span class="d-none d-lg-inline-block">home</span>
+
+
+                        </div>
+
+                        <div class="pb-3 fs-5">
+                            <i class="fa-solid fa-chart-simple me-lg-3 " style="color: #ffffff;"></i>
+                            <span class="d-none d-lg-inline-block">stats</span>
+
+                        </div>
+                        <div class="pb-3 fs-5">
+                            <i class="fa-solid fa-signal me-lg-3" style="color: #ffffff;"></i>
+                            <span class="d-none d-lg-inline-block">signals</span>
+
+                        </div>
+
+                        <div class="mt-auto fs-5">
+                            <i class="fa-solid fa-gear me-lg-3" style="color: #ffffff;"></i>
+                            <span class="d-none d-lg-inline-block">admin</span>
+
+                        </div>
+
                     </div>
 
                 </div>
                
                 <div class="wrapper d-flex flex-column">
 
-                    <div class="banner text-white p-2 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+                    <div class="banner text-white p-3 d-flex flex-column flex-md-row justify-content-between align-items-md-center bg-primary">
                         
                             <div class="d-flex flex-column order-1 order-md-0">
     
@@ -79,31 +99,29 @@
     
                                 <div class="wrapper">
                                     <span class="badge rounded-pill text-bg-secondary">3 app</span>
-                                    <span> >> </span>
-                                    <span class="badge rounded-pill text-bg-secondary d-xl-none">+</span>
-                                    <span class="badge rounded-pill text-bg-secondary d-none d-xl-i">Secondary</span>
-                                    <span class="badge rounded-pill text-bg-secondary d-none d-xl-i">Secondary</span>
-                                    <span class="badge rounded-pill text-bg-secondary d-none d-xl-i">Secondary</span>
+                                    <span> <i class="fa-solid fa-angles-right" style="color: #ffffff;"></i> </span>
+                                    <span class="badge rounded-pill text-bg-secondary d-none d-xl-none d-md-inline-block">+</span>
+                                    <span class="badge rounded-pill text-bg-secondary d-md-none d-xl-inline-block">Boolean mobile app</span>
+                                    <span class="badge rounded-pill text-bg-secondary d-md-none d-xl-inline-block">Boolean web app</span>
+                                    <span class="badge rounded-pill text-bg-secondary d-md-none d-xl-inline-block">Boolean blog app</span>
 
                                 </div>
                             </div>
                        
-                            <div class="d-flex flex-column order-2 order-md-1">
+                            <div class="d-flex flex-column order-2 order-md-1 mb-3 mb-md-0">
     
                                 <div class="wrapper ">
-                                    <span>sdsadsdadsaasdasdas</span>
+                                    <span>Studenti online negli ultimi 30 minuti</span>
+                                    <h1>125</h1>
                                 </div>
-    
-                                <div class="wrapper">
-                                   <h1>125</h1>
-                                </div>
+
                             </div>
                             
-                            <div class="d-flex flex-column order-0 order-md-2">
+                            <div class="d-flex flex-column order-0 order-md-2 mt-3 mt-md-0">
 
-                                <div class="wrapper d-flex ">
-                                    <span>Nuovo studente</span>
-                                    <h1>125</h1>
+                                <div class="wrapper d-flex align-items-center">
+                                    <span class="me-3">Nuovo studente</span>
+                                    <i class="fa-solid fa-plus p-3 border rounded me-5" style="color: #ffffff;"></i>
                                 </div>
 
                             </div>

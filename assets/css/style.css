@@ -1,21 +1,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* #region debug */
 
 .debug #site_header{
    
@@ -46,7 +32,7 @@
 
 @media screen and (min-width:992px) {
     .debug .sidebar{
-        height: calc(100vh - 100px);
+        height: calc(100vh - 82px);
         width: 200px;
     }
     .debug .banner{
@@ -60,3 +46,5 @@
         width: calc(100vw - 200px);
     }
 }
+
+/* #endregion debug */
