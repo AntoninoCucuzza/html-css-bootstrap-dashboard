@@ -52,420 +52,497 @@
 
         <!-- /#site_header -->
 
-    <main id="site_main" class="d-flex">
-        <div class="sidebar p-3">
-
-            <div class="d-flex flex-column text-white align-items-center align-items-lg-start px-lg-3 pb-3 h-100">
-                <div class="pb-3 fs-5 mt-5">
-                    <i class="fa-solid fa-house me-lg-3 " style="color: #ffffff;"></i>
-                    <span class="d-none d-lg-inline-block">home</span>
-
+    <main id="site_main" >
+        <div class="w-100 d-flex">
+            <div class="sidebar p-3">
+    
+                <div class="d-flex flex-column text-white align-items-center align-items-lg-start px-lg-3 pb-3 h-100">
+                    <div class="pb-3 fs-5 mt-5">
+                        <i class="fa-solid fa-house me-lg-3 " style="color: #ffffff;"></i>
+                        <span class="d-none d-lg-inline-block">home</span>
+    
+                    </div>
+    
+                    <div class="pb-3 fs-5">
+                        <i class="fa-solid fa-chart-simple me-lg-3 " style="color: #ffffff;"></i>
+                        <span class="d-none d-lg-inline-block">stats</span>
+    
+                    </div>
+    
+                    <div class="pb-3 fs-5">
+                        <i class="fa-solid fa-signal me-lg-3" style="color: #ffffff;"></i>
+                        <span class="d-none d-lg-inline-block">signals</span>
+    
+                    </div>
+    
+                    <div class="mt-auto fs-5">
+                        <i class="fa-solid fa-gear me-lg-3" style="color: #ffffff;"></i>
+                        <span class="d-none d-lg-inline-block">admin</span>
+    
+                    </div>
+    
                 </div>
-
-                <div class="pb-3 fs-5">
-                    <i class="fa-solid fa-chart-simple me-lg-3 " style="color: #ffffff;"></i>
-                    <span class="d-none d-lg-inline-block">stats</span>
-
-                </div>
-
-                <div class="pb-3 fs-5">
-                    <i class="fa-solid fa-signal me-lg-3" style="color: #ffffff;"></i>
-                    <span class="d-none d-lg-inline-block">signals</span>
-
-                </div>
-
-                <div class="mt-auto fs-5">
-                    <i class="fa-solid fa-gear me-lg-3" style="color: #ffffff;"></i>
-                    <span class="d-none d-lg-inline-block">admin</span>
-
-                </div>
-
+    
             </div>
+            <div class="content ">
+                <!-- /sidebar -->
+    
+                    <div class="container-fluid p-0">
+                        <div class="banner text-white p-3 d-flex flex-column flex-md-row justify-content-between align-items-md-center bg-primary">
+    
+                            <div class="d-flex flex-column order-1 order-md-0">
+                        
+                                <div class="wrapper d-flex ">
+                                    <h1>Boolean</h1>
+                                    <span class="badge rounded-pill bg_badge h-50 align-self-end mb-2 ms-2 ">Piano blaze</span>
+                        
+                                </div>
+                        
+                                <div class="wrapper">
+                                    <span class="badge rounded-pill bg_badge">3 app</span>
+                                    <span> <i class="fa-solid fa-angles-right" style="color: #ffffff;"></i> </span>
+                                    <span class="badge rounded-pill bg_badge d-none d-xl-none d-md-inline-block">+</span>
+                                    <span class="badge rounded-pill bg_badge d-md-none d-xl-inline-block">Boolean mobile app</span>
+                                    <span class="badge rounded-pill bg_badge d-md-none d-xl-inline-block">Boolean web app</span>
+                                    <span class="badge rounded-pill bg_badge d-md-none d-xl-inline-block">Boolean blog app</span>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="d-flex flex-column order-2 order-md-1 mb-3 mb-md-0">
+                        
+                                <div class="wrapper ">
+                                    <span>Studenti online negli ultimi 30 minuti</span>
+                                    <h1>125</h1>
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="d-flex flex-column order-0 order-md-2 mt-3 mt-md-0">
+                        
+                                <div class="wrapper d-flex align-items-center add">
+                                    <span class="me-3">Nuovo studente</span>
+                                    
+                                    <button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                                        <i class="fa-solid fa-plus p-2 "></i>
+                                    </button>
+    
+                                       
+                                    <div class="offcanvas offcanvas-end w-50" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="staticBackdropLabel">Inserisci un nuovo studente</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div>
+                                                <form class="row g-3">
+                                                    <div class="col-md-6">
+                                                      <label for="inputName" class="form-label">Nome</label>
+                                                      <input type="text" class="form-control" id="inputName">
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                      <label for="inputSurname" class="form-label">Cognome</label>
+                                                      <input type="text" class="form-control" id="inputSurname">
+                                                    </div>
+
+                                                    <div class="col-md-6">
+
+                                                        <label for="email1" class="form-label">Email</label>
+                                                        <div class="input-group flex-nowrap">
+                                                            <span class="input-group-text" id="addon-wrapping">@</span>
+                                                            <input type="email" class="form-control" id="email1" aria-label="Email" aria-describedby="addon-wrapping">
+                                                        </div>
+
+                                                    </div>
+
+                                                     
+                                                    <div class="col-md-6">
+                                                        <label for="inputPassword1" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" id="inputPassword1">
+                                                    </div>
+                    
+
+                                                    <div class="col-12">
+                                                        <label for="inputAddress1" class="form-label">indirizzo</label>
+                                                        <input type="text" class="form-control" id="inputAddress1" >
+                                                    </div>
+                                                    
+                                                    <div class="col-md-6">
+                                                        <label for="inputCity" class="form-label">Città</label>
+                                                        <input type="text" class="form-control" id="inputCity">
+                                                    </div>
+                                                    
+                                                    <div class="col-md-4">
+                                                        <label for="inputState" class="form-label">Stato</label>
+                                                        <select id="inputState" class="form-select">
+                                                            <option selected>Choose...</option>
+                                                            <option>...</option>
+                                                            <option>..</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    <div class="col-md-2">
+                                                        <label for="inputZip" class="form-label">CAP</label>
+                                                        <input type="text" class="form-control" id="inputZip">
+                                                    </div>
+                                                    
+                                                    <div class="mb-3">
+                                                        <label for="formFile" class="form-label">Default file input example</label>
+                                                        <input class="form-control" type="file" id="formFile">
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                            Seleziona per proseguire
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary">Sign in</button>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- /offcanavas -->
+                                </div>
+                        
+                            </div>
+                        
+                        
+                        </div>
+                        <!--/banner  -->
+    
+                        <div class="container container_special">
+                            <div class="row">
+                                
+                                <div class="col-12 col-lg-8 mt-4">
+                                    <div id="classi" class="card">
+        
+                                        <div class="card-header ">
+                                            <h2>Prossime classi</h2>
+                                        </div>
+    
+                                        <div class="card-body">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+    
+                                                        <th scope="col">Nome</th>
+                                                        <th scope="col" class="d-none d-md-table-cell">Data inizio</th>
+                                                        <th scope="col" class="d-none d-md-table-cell">ROI</th>
+                                                        <th scope="col">Stato</th>
+                                                        <th scope="col">Azioni</th>
+                                                        
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    
+                                                    <tr>
+                                                    
+                                                        <th scope="row">
+                                                            <img height="30" width="30" src="./assets/img/class-avatar.jpg" alt="">
+                                                            <span class="fw-semibold" >classe 75</span>
+                                                        </th>
+                                                        
+                                                        <td class="d-none d-md-table-cell" >15 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell " >20%</td>
+                                                        <td >
+                                                            <span class="badge text-bg-success">done</span>
+                                                        </td>
+    
+                                                        <td >
+                                                            <i class="fa-solid fa-pencil" style="color: #707070;"></i>
+                                                            <i class="fa-solid fa-trash" style="color: #707070;"></i>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <!-- /tr -->
+                                                    <tr>
+                                                        
+                                                        <th scope="row">
+                                                            <img height="30" width="30" src="./assets/img/class-avatar.jpg" alt="">
+                                                            <span class="fw-semibold" >classe 76</span>
+                                                        </th>
+    
+                                                        <td class="d-none d-md-table-cell ">16 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell ">20%</td>
+                                                        <td>
+                                                            <span class="badge text-bg-success">done</span>
+                                                        </td>
+    
+                                                        <td>
+                                                            <i class="fa-solid fa-pencil" style="color: #707070;"></i>
+                                                            <i class="fa-solid fa-trash" style="color: #707070;"></i>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <!-- /tr -->
+                                                    <tr>
+    
+                                                        <th scope="row">
+                                                            <img height="30" width="30" src="./assets/img/class-avatar.jpg" alt="">
+                                                            <span class="fw-semibold" >classe 77</span>
+                                                        </th>
+    
+                                                        <td class="d-none d-md-table-cell ">17 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell ">20%</td>
+                                                        <td>
+                                                            <span class="badge text-bg-warning">process</span>
+                                                        </td>
+    
+                                                        <td>
+                                                            <i class="fa-solid fa-pencil" style="color: #707070;"></i>
+                                                            <i class="fa-solid fa-trash" style="color: #707070;"></i>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <!-- /tr -->
+                                                    <tr>
+                                                    
+                                                        <th scope="row">
+                                                            <img height="30" width="30" src="./assets/img/class-avatar.jpg" alt="">
+                                                            <span class="fw-semibold" >classe 78</span>
+                                                        </th>
+                                                        
+                                                        <td class="d-none d-md-table-cell ">18 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell ">20%</td>
+                                                        <td>
+                                                            <span class="badge text-bg-success">done</span>
+                                                        </td>
+    
+                                                        <td>
+                                                            <i class="fa-solid fa-pencil" style="color: #707070;"></i>
+                                                            <i class="fa-solid fa-trash" style="color: #707070;"></i>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <!-- /tr -->
+                                                    <tr>
+                                                        
+                                                        <th scope="row">
+                                                            <img height="30" width="30" src="./assets/img/class-avatar.jpg" alt="">
+                                                            <span class="fw-semibold" >classe 79</span>
+                                                        </th>
+    
+                                                        <td class="d-none d-md-table-cell ">19 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell ">20%</td>
+                                                        <td>
+                                                            <span class="badge text-bg-danger">failed</span>
+                                                        </td>
+    
+                                                        <td>
+                                                            <i class="fa-solid fa-pencil" style="color: #707070;"></i>
+                                                            <i class="fa-solid fa-trash" style="color: #707070;"></i>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <!-- /tr -->
+                                                    <tr>
+    
+                                                        <th scope="row">
+                                                            <img height="30" width="30" src="./assets/img/class-avatar.jpg" alt="">
+                                                            <span class="fw-semibold" >classe 80</span>
+                                                        </th>
+    
+                                                        <td class="d-none d-md-table-cell ">20 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell ">20%</td>
+                                                        <td>
+                                                            <span class="badge text-bg-success">done</span>
+                                                        </td>
+    
+                                                        <td>
+                                                            <i class="fa-solid fa-pencil" style="color: #707070;"></i>
+                                                            <i class="fa-solid fa-trash" style="color: #707070;"></i>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <!-- /tr -->
+                                                    <tr>
+                                                    
+                                                        <th scope="row">
+                                                            <img height="30" width="30" src="./assets/img/class-avatar.jpg" alt="">
+                                                            <span class="fw-semibold" >classe 81</span>
+                                                        </th>
+                                                        
+                                                        <td class="d-none d-md-table-cell ">21 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell ">20%</td>
+                                                        <td>
+                                                            <span class="badge text-bg-danger">failed</span>
+    
+                                                        </td>
+    
+                                                        <td>
+                                                            <i class="fa-solid fa-pencil" style="color: #707070;"></i>
+                                                            <i class="fa-solid fa-trash" style="color: #707070;"></i>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <!-- /tr -->
+                                                    <tr>
+                                                        
+                                                        <th scope="row">
+                                                            <img height="30" width="30" src="./assets/img/class-avatar.jpg" alt="">
+                                                            <span class="fw-semibold" >classe 82</span>
+                                                        </th>
+    
+                                                        <td class="d-none d-md-table-cell ">22 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell ">20%</td>
+                                                        <td>
+                                                            <span class="badge text-bg-success">done</span>
+                                                        </td>
+    
+                                                        <td>
+                                                            <i class="fa-solid fa-pencil" style="color: #707070;"></i>
+                                                            <i class="fa-solid fa-trash" style="color: #707070;"></i>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <!-- /tr -->
+    
+                                                </tbody>
+                                            </table>
+    
+                                        </div>
+                                    </div>
+    
+                                    
+                                    <div id="faq" class="card my-4">
+                                        
+                                        <div class="card-header">
+                                            <h2>
+                                                F.A.Q.
+                                            </h2>
+                                        </div>
+    
+                                        
+                                        <div class="accordion" id="accordionExample">
+                                            
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                  Come aggiungere un nuovo studente?
+                                                </button>
+                                              </h2>
+                                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    clicca sul + in alto nella sezione blu.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                  Come posso accedere alle informazioni del mio account?    
+                                                </button>
+                                              </h2>
+                                              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Clicca sull'icona della campanella
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    posso usare questa dashbord da mobile?
+                                                </button>
+                                              </h2>
+                                              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"> certo </a>
+                                                </div>
+                                              </div>
+                                            </div>
+    
+                                        </div>
+    
+                                        <!-- /accordion -->
+                                    </div>
+                                    <!-- /faq -->
+                                </div>
+                                
+                                <div class="col-12 col-lg-4 mt-4">
+                                    <div id="todo" class="card">
+                                    
+                                        <div class="card-header">
+                                            <h2>Todo</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <!-- <input class="form-check-input me-1" type="checkbox" value="" id="defaultCheck1"> -->
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    </div>
+    
+                                                    <label class="form-check-label stretched-link" for="firstCheckboxStretched">Kickoff nuove classi</label>
+    
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label stretched-link"for="secondCheckboxStretched">Lezionibootstrap 5 in class #75</label>
+    
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label stretched-link"for="thirdCheckboxStretched">Controllare username github studenti</label>
+    
+                                                </li>
+                                            </ul>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div id="active_user" class="card my-4">
+    
+                                        <div class="card-body">
+                                            <img class="img-fluid" src="./assets/img/stats.jpeg" alt="">
+                                            <h5>utenti attivi</h5>
+                                            <span>lista degli utenti attivi in piattaforma nell'ultimo mese </span>
+                                        </div>
+    
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Gennaio: 1200</li>
+                                            <li class="list-group-item">Febbraio: 800</li>
+                                            <li class="list-group-item">Marzo: 1500</li>
+                                            <li class="list-group-item py-3"><a href="#">Visualizza report approfondito</a></li>
+                                        </ul>
+                                    
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                          Checked checkbox
+                                        </label>
+                                    </div>
+    
+    
+           
+                                   
+    
+                                </div>
+    
+                                
+                            </div>
+                               
+                        </div>
+    
+    
+                    </div>
+                </div>
 
         </div>
-        <div class="content ">
-            <!-- /sidebar -->
-
-                <div class="container-fluid p-0">
-                    <div class="banner text-white p-3 d-flex flex-column flex-md-row justify-content-between align-items-md-center bg-primary">
-
-                        <div class="d-flex flex-column order-1 order-md-0">
-                    
-                            <div class="wrapper d-flex ">
-                                <h1>Boolean</h1>
-                                <span class="badge rounded-pill bg_badge h-50 align-self-end mb-2 ms-2 ">Piano blaze</span>
-                    
-                            </div>
-                    
-                            <div class="wrapper">
-                                <span class="badge rounded-pill bg_badge">3 app</span>
-                                <span> <i class="fa-solid fa-angles-right" style="color: #ffffff;"></i> </span>
-                                <span class="badge rounded-pill bg_badge d-none d-xl-none d-md-inline-block">+</span>
-                                <span class="badge rounded-pill bg_badge d-md-none d-xl-inline-block">Boolean mobile app</span>
-                                <span class="badge rounded-pill bg_badge d-md-none d-xl-inline-block">Boolean web app</span>
-                                <span class="badge rounded-pill bg_badge d-md-none d-xl-inline-block">Boolean blog app</span>
-                    
-                            </div>
-                        </div>
-                    
-                        <div class="d-flex flex-column order-2 order-md-1 mb-3 mb-md-0">
-                    
-                            <div class="wrapper ">
-                                <span>Studenti online negli ultimi 30 minuti</span>
-                                <h1>125</h1>
-                            </div>
-                    
-                        </div>
-                    
-                        <div class="d-flex flex-column order-0 order-md-2 mt-3 mt-md-0">
-                    
-                            <div class="wrapper d-flex align-items-center add">
-                                <span class="me-3">Nuovo studente</span>
-                                <i class="fa-solid fa-plus p-3 border rounded me-5"></i>
-                            </div>
-                    
-                        </div>
-                    
-                    
-                    </div>
-                    <!--/banner  -->
-
-                    <div class="container container_special">
-                        <div class="row">
-                            
-                            <div class="col-12 col-lg-8 mt-4">
-                                <div id="classi" class="card">
-    
-                                    <div class="card-header ">
-                                        <h2>Prossime classi</h2>
-                                    </div>
-
-                                    <div class="card-body">
-                                        <table class="table table-hover">
-                                            <thead>
-                                                <tr>
-
-                                                    <th scope="col">Nome</th>
-                                                    <th scope="col" class="d-none d-md-table-cell">Data inizio</th>
-                                                    <th scope="col" class="d-none d-md-table-cell">ROI</th>
-                                                    <th scope="col">Stato</th>
-                                                    <th scope="col">Azioni</th>
-                                                    
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                
-                                                <tr>
-                                                
-                                                    <th scope="row">
-                                                        <img height="30" width="30" src="./assets/img/class-avatar.jpg" alt="">
-                                                        <span class="fw-semibold" >classe 75</span>
-                                                    </th>
-                                                    
-                                                    <td class="d-none d-md-table-cell" >15 Feb 2021</td>
-                                                    <td class="d-none d-md-table-cell " >20%</td>
-                                                    <td >
-                                                        <span class="badge text-bg-success">done</span>
-                                                    </td>
-
-                                                    <td >
-                                                        <i class="fa-solid fa-pencil" style="color: #707070;"></i>
-                                                        <i class="fa-solid fa-trash" style="color: #707070;"></i>
-                                                    </td>
-
-                                                </tr>
-                                                <!-- /tr -->
-                                                <tr>
-                                                    
-                                                    <th scope="row">
-                                                        <img height="30" width="30" src="./assets/img/class-avatar.jpg" alt="">
-                                                        <span class="fw-semibold" >classe 76</span>
-                                                    </th>
-
-                                                    <td class="d-none d-md-table-cell ">16 Feb 2021</td>
-                                                    <td class="d-none d-md-table-cell ">20%</td>
-                                                    <td>
-                                                        <span class="badge text-bg-success">done</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <i class="fa-solid fa-pencil" style="color: #707070;"></i>
-                                                        <i class="fa-solid fa-trash" style="color: #707070;"></i>
-                                                    </td>
-
-                                                </tr>
-                                                <!-- /tr -->
-                                                <tr>
-
-                                                    <th scope="row">
-                                                        <img height="30" width="30" src="./assets/img/class-avatar.jpg" alt="">
-                                                        <span class="fw-semibold" >classe 77</span>
-                                                    </th>
-
-                                                    <td class="d-none d-md-table-cell ">17 Feb 2021</td>
-                                                    <td class="d-none d-md-table-cell ">20%</td>
-                                                    <td>
-                                                        <span class="badge text-bg-warning">process</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <i class="fa-solid fa-pencil" style="color: #707070;"></i>
-                                                        <i class="fa-solid fa-trash" style="color: #707070;"></i>
-                                                    </td>
-
-                                                </tr>
-                                                <!-- /tr -->
-                                                <tr>
-                                                
-                                                    <th scope="row">
-                                                        <img height="30" width="30" src="./assets/img/class-avatar.jpg" alt="">
-                                                        <span class="fw-semibold" >classe 78</span>
-                                                    </th>
-                                                    
-                                                    <td class="d-none d-md-table-cell ">18 Feb 2021</td>
-                                                    <td class="d-none d-md-table-cell ">20%</td>
-                                                    <td>
-                                                        <span class="badge text-bg-success">done</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <i class="fa-solid fa-pencil" style="color: #707070;"></i>
-                                                        <i class="fa-solid fa-trash" style="color: #707070;"></i>
-                                                    </td>
-
-                                                </tr>
-                                                <!-- /tr -->
-                                                <tr>
-                                                    
-                                                    <th scope="row">
-                                                        <img height="30" width="30" src="./assets/img/class-avatar.jpg" alt="">
-                                                        <span class="fw-semibold" >classe 79</span>
-                                                    </th>
-
-                                                    <td class="d-none d-md-table-cell ">19 Feb 2021</td>
-                                                    <td class="d-none d-md-table-cell ">20%</td>
-                                                    <td>
-                                                        <span class="badge text-bg-danger">failed</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <i class="fa-solid fa-pencil" style="color: #707070;"></i>
-                                                        <i class="fa-solid fa-trash" style="color: #707070;"></i>
-                                                    </td>
-
-                                                </tr>
-                                                <!-- /tr -->
-                                                <tr>
-
-                                                    <th scope="row">
-                                                        <img height="30" width="30" src="./assets/img/class-avatar.jpg" alt="">
-                                                        <span class="fw-semibold" >classe 80</span>
-                                                    </th>
-
-                                                    <td class="d-none d-md-table-cell ">20 Feb 2021</td>
-                                                    <td class="d-none d-md-table-cell ">20%</td>
-                                                    <td>
-                                                        <span class="badge text-bg-success">done</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <i class="fa-solid fa-pencil" style="color: #707070;"></i>
-                                                        <i class="fa-solid fa-trash" style="color: #707070;"></i>
-                                                    </td>
-
-                                                </tr>
-                                                <!-- /tr -->
-                                                <tr>
-                                                
-                                                    <th scope="row">
-                                                        <img height="30" width="30" src="./assets/img/class-avatar.jpg" alt="">
-                                                        <span class="fw-semibold" >classe 81</span>
-                                                    </th>
-                                                    
-                                                    <td class="d-none d-md-table-cell ">21 Feb 2021</td>
-                                                    <td class="d-none d-md-table-cell ">20%</td>
-                                                    <td>
-                                                        <span class="badge text-bg-danger">failed</span>
-
-                                                    </td>
-
-                                                    <td>
-                                                        <i class="fa-solid fa-pencil" style="color: #707070;"></i>
-                                                        <i class="fa-solid fa-trash" style="color: #707070;"></i>
-                                                    </td>
-
-                                                </tr>
-                                                <!-- /tr -->
-                                                <tr>
-                                                    
-                                                    <th scope="row">
-                                                        <img height="30" width="30" src="./assets/img/class-avatar.jpg" alt="">
-                                                        <span class="fw-semibold" >classe 82</span>
-                                                    </th>
-
-                                                    <td class="d-none d-md-table-cell ">22 Feb 2021</td>
-                                                    <td class="d-none d-md-table-cell ">20%</td>
-                                                    <td>
-                                                        <span class="badge text-bg-success">done</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <i class="fa-solid fa-pencil" style="color: #707070;"></i>
-                                                        <i class="fa-solid fa-trash" style="color: #707070;"></i>
-                                                    </td>
-
-                                                </tr>
-                                                <!-- /tr -->
-
-                                            </tbody>
-                                        </table>
-
-                                    </div>
-                                </div>
-
-                                
-                                <div id="faq" class="card my-4">
-                                    
-                                    <div class="card-header">
-                                        <h2>
-                                            F.A.Q.
-                                        </h2>
-                                    </div>
-
-                                    
-                                    <div class="accordion" id="accordionExample">
-                                        
-                                        <div class="accordion-item">
-                                          <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                              Come aggiungere un nuovo studente?
-                                            </button>
-                                          </h2>
-                                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                clicca sul + in alto nella sezione blu.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                          <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                              Come posso accedere alle informazioni del mio account?    
-                                            </button>
-                                          </h2>
-                                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Clicca sull'icona della campanella
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                          <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                posso usare questa dashbord da mobile?
-                                            </button>
-                                          </h2>
-                                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                              <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"> certo </a>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                    </div>
-
-                                    <!-- /accordion -->
-                                </div>
-                                <!-- /faq -->
-                            </div>
-                            
-                            <div class="col-12 col-lg-4 mt-4">
-                                <div id="todo" class="card">
-                                
-                                    <div class="card-header">
-                                        <h2>Todo</h2>
-                                    </div>
-                                    <div class="card-body">
-                                        <ul class="list-group">
-                                            <li class="list-group-item">
-                                                <!-- <input class="form-check-input me-1" type="checkbox" value="" id="defaultCheck1"> -->
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                </div>
-
-                                                <label class="form-check-label stretched-link" for="firstCheckboxStretched">Kickoff nuove classi</label>
-
-                                            </li>
-                                            <li class="list-group-item">
-                                                <input class="form-check-input me-1" type="checkbox" value="" id="defaultCheck1">
-                                                <label class="form-check-label stretched-link"for="secondCheckboxStretched">Lezionibootstrap 5 in class #75</label>
-
-                                            </li>
-                                            <li class="list-group-item">
-                                                <input class="form-check-input me-1" type="checkbox" value="" id="defaultCheck1">
-                                                <label class="form-check-label stretched-link"for="thirdCheckboxStretched">Controllare username github studenti</label>
-
-                                            </li>
-                                        </ul>
-
-                                    </div>
-
-                                </div>
-
-                                <div id="active_user" class="card my-4">
-
-                                    <div class="card-body">
-                                        <img class="img-fluid" src="./assets/img/stats.jpeg" alt="">
-                                        <h5>utenti attivi</h5>
-                                        <span>lista degli utenti attivi in piattaforma nell'ultimo mese </span>
-                                    </div>
-
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Gennaio: 1200</li>
-                                        <li class="list-group-item">Febbraio: 800</li>
-                                        <li class="list-group-item">Marzo: 1500</li>
-                                        <li class="list-group-item py-3"><a href="#">Visualizza report approfondito</a></li>
-                                    </ul>
-                                
-                                </div>
-                                
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                      Checked checkbox
-                                    </label>
-                                </div>
-                                
-                                <button type="button" class="btn btn-outline-light">Light</button>
-                                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                                    Toggle static offcanvas
-                                </button>
-                                  
-                                <div class="offcanvas offcanvas-start w-100" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <div>
-                                            I will not close if you click outside of me.
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            
-                        </div>
-                           
-                    </div>
-
-
-                </div>
-            </div>
 
         
     </main>

@@ -20,6 +20,7 @@
 .content{
     background-color: var(--boo-bg-main);
     height: calc(100vh - 80px);
+    width: calc(100vw - 50px);
     overflow-y: auto;
 }
 
@@ -27,14 +28,9 @@
 .bg_badge{
     background-color: var(--boo-bg-badge-primary);
 }
-.add i{
-    transition: all .5s;
-}
 
-.add i:hover{
-    background-color: var(--boo-bg-main);
-    color: var(--boo-bg-sidebar);
-}
+
+
 
 @media screen and (min-width:992px) {
     .sidebar{
