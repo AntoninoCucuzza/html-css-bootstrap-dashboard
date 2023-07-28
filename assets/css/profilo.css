@@ -1,0 +1,54 @@
+:root{
+    --boo-bg-main: #f8f9fa ;
+    --boo-bg-sidebar: #051e34 ;
+    --boo-bg-badge-primary: #165bba ;
+}
+
+#site_header{
+    height: 80px;
+}
+
+.sidebar{
+    background-image: url(../img/sidebar-bg.png);
+    background-color: var(--boo-bg-sidebar);
+    background-size: cover;
+    height: calc(100vh - 80px);
+    width: 50px;
+}
+
+.content{
+    background-color: var(--boo-bg-main);
+    height: calc(100vh - 80px);
+    width: calc(100vw - 50px);
+    overflow-y: auto;
+}
+
+
+.bg_gray_hover{
+    transition: .5s all;
+}
+   
+.bg_gray_hover:hover{
+    background-color: gray;
+}
+   
+.sidebar a{
+    color: var(--boo-bg-main);
+    text-decoration: none;
+}
+
+@media screen and (min-width:992px) {
+    .sidebar{
+        height: calc(100vh - 80px);
+        width: 200px;
+    }
+
+    .content{
+        width: 100%;
+    }
+    main{
+        height: calc(100vh - 80px);
+    }
+
+
+}
