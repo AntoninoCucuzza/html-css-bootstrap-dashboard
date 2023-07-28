@@ -56,6 +56,10 @@
     main{
         height: calc(100vh - 80px);
     }
+
+    .w_lg_50{
+        width: 50% !important; 
+    }
 }
 
 
