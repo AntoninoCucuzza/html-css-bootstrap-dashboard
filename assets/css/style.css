@@ -29,8 +29,18 @@
     background-color: var(--boo-bg-badge-primary);
 }
 
+.bg_gray_hover{
+ transition: .5s all;
+}
 
+.bg_gray_hover:hover{
+    background-color: gray;
+}
 
+.sidebar a{
+    color: var(--boo-bg-main);
+    text-decoration: none;
+}
 
 @media screen and (min-width:992px) {
     .sidebar{
