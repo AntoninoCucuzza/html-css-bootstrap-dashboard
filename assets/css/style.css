@@ -4,9 +4,6 @@
     --boo-bg-badge-primary: #165bba ;
 }
 
-.container_special{
-    width: calc(100vw - 200px);
-}
 
 #site_header{
     height: 80px;
@@ -18,7 +15,7 @@
     background-size: cover;
     height: calc(100vh - 80px);
     width: 50px;
-    position: fixed;
+
 }
 .content{
     background-color: var(--boo-bg-main);
@@ -26,28 +23,26 @@
     overflow-y: auto;
 }
 
-.banner{
-    width: calc(100vw - 50px);
-}
 
 .bg_badge{
     background-color: var(--boo-bg-badge-primary);
 }
+.add i{
+    transition: all .5s;
+}
 
+.add i:hover{
+    background-color: var(--boo-bg-main);
+    color: var(--boo-bg-sidebar);
+}
 
 @media screen and (min-width:992px) {
     .sidebar{
-        height: calc(100vh - 82px);
+        height: calc(100vh - 80px);
         width: 200px;
     }
-    .banner{
-       
-        width: calc(100vw - 200px);
-    }
     .content{
-        height: 100%;
-        width: calc(100vw - 200px);
-        margin-left: auto;
+        width: 100%;
     }
     .container_special{
         width: calc(100vw - 200px);

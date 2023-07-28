@@ -17,7 +17,7 @@
 </head>
 <body class="">
 
-    <header id="site_header" class="bg-white sticky-top">
+    <header id="site_header" class="bg-white ">
         <div class="container-fluid">
             <div class="input-group py-3 ">
 
@@ -52,41 +52,41 @@
 
         <!-- /#site_header -->
 
-    <main id="site_main">
-            <div class="sidebar">
+    <main id="site_main" class="d-flex">
+        <div class="sidebar p-3">
 
-                <div class="d-flex flex-column text-white align-items-center align-items-lg-start px-lg-3 pb-3 h-100">
-                    <div class="pb-3 fs-5 mt-5">
-                        <i class="fa-solid fa-house me-lg-3 " style="color: #ffffff;"></i>
-                        <span class="d-none d-lg-inline-block">home</span>
+            <div class="d-flex flex-column text-white align-items-center align-items-lg-start px-lg-3 pb-3 h-100">
+                <div class="pb-3 fs-5 mt-5">
+                    <i class="fa-solid fa-house me-lg-3 " style="color: #ffffff;"></i>
+                    <span class="d-none d-lg-inline-block">home</span>
 
-                    </div>
+                </div>
 
-                    <div class="pb-3 fs-5">
-                        <i class="fa-solid fa-chart-simple me-lg-3 " style="color: #ffffff;"></i>
-                        <span class="d-none d-lg-inline-block">stats</span>
+                <div class="pb-3 fs-5">
+                    <i class="fa-solid fa-chart-simple me-lg-3 " style="color: #ffffff;"></i>
+                    <span class="d-none d-lg-inline-block">stats</span>
 
-                    </div>
+                </div>
 
-                    <div class="pb-3 fs-5">
-                        <i class="fa-solid fa-signal me-lg-3" style="color: #ffffff;"></i>
-                        <span class="d-none d-lg-inline-block">signals</span>
+                <div class="pb-3 fs-5">
+                    <i class="fa-solid fa-signal me-lg-3" style="color: #ffffff;"></i>
+                    <span class="d-none d-lg-inline-block">signals</span>
 
-                    </div>
+                </div>
 
-                    <div class="mt-auto fs-5">
-                        <i class="fa-solid fa-gear me-lg-3" style="color: #ffffff;"></i>
-                        <span class="d-none d-lg-inline-block">admin</span>
-
-                    </div>
+                <div class="mt-auto fs-5">
+                    <i class="fa-solid fa-gear me-lg-3" style="color: #ffffff;"></i>
+                    <span class="d-none d-lg-inline-block">admin</span>
 
                 </div>
 
             </div>
+
+        </div>
+        <div class="content ">
             <!-- /sidebar -->
 
-            <div class="content">
-                <div class="container-fluid ps-5 ps-lg-0">
+                <div class="container-fluid p-0">
                     <div class="banner text-white p-3 d-flex flex-column flex-md-row justify-content-between align-items-md-center bg-primary">
 
                         <div class="d-flex flex-column order-1 order-md-0">
@@ -119,9 +119,9 @@
                     
                         <div class="d-flex flex-column order-0 order-md-2 mt-3 mt-md-0">
                     
-                            <div class="wrapper d-flex align-items-center">
+                            <div class="wrapper d-flex align-items-center add">
                                 <span class="me-3">Nuovo studente</span>
-                                <i class="fa-solid fa-plus p-3 border rounded me-5" style="color: #ffffff;"></i>
+                                <i class="fa-solid fa-plus p-3 border rounded me-5"></i>
                             </div>
                     
                         </div>
@@ -141,7 +141,7 @@
                                     </div>
 
                                     <div class="card-body">
-                                        <table class="table   table-hover">
+                                        <table class="table table-hover">
                                             <thead>
                                                 <tr>
 
@@ -164,7 +164,10 @@
                                                     
                                                     <td class="d-none d-md-table-cell" >15 Feb 2021</td>
                                                     <td class="d-none d-md-table-cell " >20%</td>
-                                                    <td >done</td>
+                                                    <td >
+                                                        <span class="badge text-bg-success">done</span>
+                                                    </td>
+
                                                     <td >
                                                         <i class="fa-solid fa-pencil" style="color: #707070;"></i>
                                                         <i class="fa-solid fa-trash" style="color: #707070;"></i>
@@ -181,7 +184,10 @@
 
                                                     <td class="d-none d-md-table-cell ">16 Feb 2021</td>
                                                     <td class="d-none d-md-table-cell ">20%</td>
-                                                    <td>done</td>
+                                                    <td>
+                                                        <span class="badge text-bg-success">done</span>
+                                                    </td>
+
                                                     <td>
                                                         <i class="fa-solid fa-pencil" style="color: #707070;"></i>
                                                         <i class="fa-solid fa-trash" style="color: #707070;"></i>
@@ -198,7 +204,10 @@
 
                                                     <td class="d-none d-md-table-cell ">17 Feb 2021</td>
                                                     <td class="d-none d-md-table-cell ">20%</td>
-                                                    <td>done</td>
+                                                    <td>
+                                                        <span class="badge text-bg-warning">process</span>
+                                                    </td>
+
                                                     <td>
                                                         <i class="fa-solid fa-pencil" style="color: #707070;"></i>
                                                         <i class="fa-solid fa-trash" style="color: #707070;"></i>
@@ -215,7 +224,10 @@
                                                     
                                                     <td class="d-none d-md-table-cell ">18 Feb 2021</td>
                                                     <td class="d-none d-md-table-cell ">20%</td>
-                                                    <td>done</td>
+                                                    <td>
+                                                        <span class="badge text-bg-success">done</span>
+                                                    </td>
+
                                                     <td>
                                                         <i class="fa-solid fa-pencil" style="color: #707070;"></i>
                                                         <i class="fa-solid fa-trash" style="color: #707070;"></i>
@@ -232,7 +244,10 @@
 
                                                     <td class="d-none d-md-table-cell ">19 Feb 2021</td>
                                                     <td class="d-none d-md-table-cell ">20%</td>
-                                                    <td>done</td>
+                                                    <td>
+                                                        <span class="badge text-bg-danger">failed</span>
+                                                    </td>
+
                                                     <td>
                                                         <i class="fa-solid fa-pencil" style="color: #707070;"></i>
                                                         <i class="fa-solid fa-trash" style="color: #707070;"></i>
@@ -249,7 +264,10 @@
 
                                                     <td class="d-none d-md-table-cell ">20 Feb 2021</td>
                                                     <td class="d-none d-md-table-cell ">20%</td>
-                                                    <td>done</td>
+                                                    <td>
+                                                        <span class="badge text-bg-success">done</span>
+                                                    </td>
+
                                                     <td>
                                                         <i class="fa-solid fa-pencil" style="color: #707070;"></i>
                                                         <i class="fa-solid fa-trash" style="color: #707070;"></i>
@@ -266,7 +284,11 @@
                                                     
                                                     <td class="d-none d-md-table-cell ">21 Feb 2021</td>
                                                     <td class="d-none d-md-table-cell ">20%</td>
-                                                    <td>done</td>
+                                                    <td>
+                                                        <span class="badge text-bg-danger">failed</span>
+
+                                                    </td>
+
                                                     <td>
                                                         <i class="fa-solid fa-pencil" style="color: #707070;"></i>
                                                         <i class="fa-solid fa-trash" style="color: #707070;"></i>
@@ -283,7 +305,10 @@
 
                                                     <td class="d-none d-md-table-cell ">22 Feb 2021</td>
                                                     <td class="d-none d-md-table-cell ">20%</td>
-                                                    <td>done</td>
+                                                    <td>
+                                                        <span class="badge text-bg-success">done</span>
+                                                    </td>
+
                                                     <td>
                                                         <i class="fa-solid fa-pencil" style="color: #707070;"></i>
                                                         <i class="fa-solid fa-trash" style="color: #707070;"></i>
@@ -367,7 +392,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                                 </div>
-                                                
+
                                                 <label class="form-check-label stretched-link" for="firstCheckboxStretched">Kickoff nuove classi</label>
 
                                             </li>
@@ -412,10 +437,28 @@
                                     <label class="form-check-label" for="flexCheckChecked">
                                       Checked checkbox
                                     </label>
-                                  </div>
+                                </div>
+                                
+                                <button type="button" class="btn btn-outline-light">Light</button>
+                                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                                    Toggle static offcanvas
+                                </button>
+                                  
+                                <div class="offcanvas offcanvas-start w-100" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div>
+                                            I will not close if you click outside of me.
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
 
+                            
                         </div>
                            
                     </div>
