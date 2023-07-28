@@ -2,9 +2,13 @@
     --boo-bg-main: #f8f9fa ;
     --boo-bg-sidebar: #051e34 ;
     --boo-bg-badge-primary: #165bba ;
+    
+    --color-scale-gray-5: #484f58;
+    --color-scale-gray-3: #8b949e;
 }
 
 #site_header{
+
     height: 80px;
 }
 
@@ -17,12 +21,23 @@
 }
 
 .content{
-    background-color: var(--boo-bg-main);
+    background-color: var(--color-scale-gray-3);
+    background-image: url(../img/sidebar-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: calc(100vh - 80px);
     width: calc(100vw - 50px);
     overflow-y: auto;
 }
 
+.banner{
+    background-color: var(--color-scale-gray-5);
+}
+
+.a_ratio{
+    aspect-ratio: 1/1;
+}
 
 .bg_gray_hover{
     transition: .5s all;
@@ -51,4 +66,14 @@
     }
 
 
+}
+
+.debug [class^='col-']{
+    background-color: #165bba;
+    height: 100px;
+}
+
+.debug .classi [class^='col']{
+    background-color: red;
+    height: 200px;
 }
